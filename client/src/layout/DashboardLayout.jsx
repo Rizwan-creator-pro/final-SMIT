@@ -25,7 +25,7 @@ const sharedLinks = (
     </li>
     <li>
       <Link to="/menu">
-        <FaCartShopping /> Menu
+        <FaCartShopping /> Events
       </Link>
     </li>
   </>

@@ -149,7 +149,7 @@ const CartPage = () => {
           {/* content */}
           <div className=" text-center px-4 space-y-7">
             <h2 className="md:text-5xl text-4xl font-bold md:leading-snug leading-snug">
-              Items Added to The<span className="text-green"> Cart</span>
+              Events Added to The<span className="text-green"> Cart</span>
             </h2>
           </div>
         </div>
@@ -165,9 +165,9 @@ const CartPage = () => {
                 <thead className="bg-green text-white rounded-sm">
                   <tr>
                     <th>#</th>
-                    <th>Food</th>
-                    <th>Item Name</th>
-                    <th>Quantity</th>
+                    <th>Image</th>
+                    <th>Event Name</th>
+                    <th>Persons</th>
                     <th>Price</th>
                     <th>Action</th>
                   </tr>
@@ -198,9 +198,8 @@ const CartPage = () => {
                           type="number"
                           value={item.quantity}
                           onChange={() => console.log(item.quantity)}
-                          className={`w-10 mx-2 text-center overflow-hidden appearance-none ${
-                            darkMode ? "text-black" : ""
-                          }`}
+                          className={`w-10 mx-2 text-center overflow-hidden appearance-none ${darkMode ? "text-black" : ""
+                            }`}
                         />
                         <button
                           className="btn btn-xs"
@@ -243,9 +242,9 @@ const CartPage = () => {
                 <span id="total-price">${orderTotal.toFixed(2)}</span>
               </p>
               <Link to="/process_checkout">
-              <button className="btn btn-md bg-green text-white px-8 py-1 mt-5">
-                Proceed to Checkout
-              </button>
+                <button className="btn btn-md bg-green text-white px-8 py-1 mt-5">
+                  Proceed to Checkout
+                </button>
               </Link>
             </div>
           </div>
@@ -255,7 +254,7 @@ const CartPage = () => {
           <p>Cart is empty. Please add products.</p>
           <Link to="/menu">
             <button className="btn bg-green text-white mt-3">
-              Back to Menu
+              Back to Event
             </button>
           </Link>
         </div>
